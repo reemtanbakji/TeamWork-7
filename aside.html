@@ -12,96 +12,373 @@
       rel="stylesheet"
       href="./fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.css"
     />
+    <style>
+      :root {
+        --themecolor1: #425a8b;
+        --themecolor2: #fd9636;
+        --themecolor3: #6b83b6;
+        --themecolor4: #253d6c;
+        --themecolor5: #b3bdd1;
+        --themecolor6: #efefef;
+      }
+
+      .ddm {
+        color: var(--themecolor1);
+        text-decoration-line: none;
+        font-size: small;
+        font-weight: 00;
+      }
+
+      .btn-group:hover .dropdown-menu {
+        display: block;
+        text-wrap-mode: nowrap;
+        color: rgb(26, 135, 208);
+        font-weight: 400;
+      }
+    </style>
   </head>
   <body>
+    <!--<div class="navbar bg-light navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collaps"
+          data-bs-target="#navbarside"
+        >
+          <img src="./sidebar-icon/open.svg" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarside">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">32135</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">32135</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">32135</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>-->
+
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-1 col-md-1 col-sm-1 px-0">
-          <div class="pt-3 d-flex justify-content-center border w-50">
-            <ul class="list-unstyled justify-content-center">
+      <div class="row d-flex justify-content-start">
+        <div class="col-lg-1 col-md-1 col-sm-1 ps-0">
+          <div class="pt-3 px-0 d-flex justify-content-center">
+            <ul
+              class="list-unstyled justify-content-center border-end border-bottom border ms-0 px-0"
+            >
               <li>
-                <a href="#"
-                  ><img class="pb-4" src="./sidebar-icon/open.svg"
-                /></a>
+                <a href="./index.html">
+                  <img src="./sidebar-icon/open.svg" class="pb-3 mt-2" alt="" />
+                </a>
+              </li>
+
+              <li>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img
+                      class="btn pb-3 px-0"
+                      src="./sidebar-icon/monitor.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">Computer Accessories</a></li>
+                    <li><a class="ddm" href="#">Computer Cases</a></li>
+                    <li><a class="ddm" href="#">Laptop</a></li>
+                    <li><a class="ddm" href="#">HDD</a></li>
+                    <li><a class="ddm" href="#">RAM</a></li>
+                    <li><a class="ddm" href="#">Headphone</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/monitor.svg"
-                /></a>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img class="btn pb-3 px-0" src="./sidebar-icon/mobile.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">Phone Accessories</a></li>
+                    <li><a class="ddm" href="#">Phone Cases</a></li>
+                    <li><a class="ddm" href="#">Postpaid Phones</a></li>
+                    <li><a class="ddm" href="#">Unlocked Phones</a></li>
+                    <li><a class="ddm" href="#">Prepaid phones</a></li>
+                    <li><a class="ddm" href="#">Prepaid Plans</a></li>
+                    <li><a class="ddm" href="#">Refurbished Phones</a></li>
+                    <li><a class="ddm" href="#">Straight Talk</a></li>
+                    <li><a class="ddm" href="#">iphone</a></li>
+                    <li><a class="ddm" href="#">Samsung Galaxy</a></li>
+                    <li><a class="ddm" href="#">Samsung Galaxy</a></li>
+                    <li><a class="ddm" href="#">Samsung Galaxy</a></li>
+                    <li><a class="ddm" href="#">Samsung Galaxy</a></li>
+                    <li><a class="ddm" href="#">Samsung Galaxy</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/mobile.svg"
-                /></a>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img class="btn pb-3 px-0" src="./sidebar-icon/game.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">Wireless Routers</a></li>
+                    <li><a class="ddm" href="#">Cool New Gadgets</a></li>
+                    <li><a class="ddm" href="#">Tech and Gadgets</a></li>
+                    <li><a class="ddm" href="#">Geek Gift and Gadgets</a></li>
+                    <li><a class="ddm" href="#">Xbox Accessories</a></li>
+                    <li><a class="ddm" href="#">PlayStation Accessories</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/game.svg"
-                /></a>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img class="btn pb-3 px-0" src="./sidebar-icon/clock.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">Smart Watches</a></li>
+                    <li><a class="ddm" href="#">Fashion Smart Watches</a></li>
+                    <li><a class="ddm" href="#">Smart Bracelets</a></li>
+                    <li><a class="ddm" href="#">Pocket Watches</a></li>
+                    <li><a class="ddm" href="#">Smart Rings</a></li>
+                    <li><a class="ddm" href="#">Other Watches</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/clock.svg"
-                /></a>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img
+                      class="btn pb-3 px-0"
+                      src="./sidebar-icon/airpods.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">On-Ear Headphones</a></li>
+                    <li><a class="ddm" href="#">Earbud & In-Ear</a></li>
+                    <li><a class="ddm" href="#">DJ Headphones</a></li>
+                    <li><a class="ddm" href="#">PC Accessories</a></li>
+                    <li><a class="ddm" href="#">PC Games Headsets</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/airpods.svg"
-                /></a>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img class="btn pb-3 px-0" src="./sidebar-icon/mouse.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">Logitech</a></li>
+                    <li><a class="ddm" href="#">Redragon</a></li>
+                    <li><a class="ddm" href="#">Amazon Basics</a></li>
+                    <li><a class="ddm" href="#">Microsoft</a></li>
+                    <li><a class="ddm" href="#">MageGee</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/mouse.svg"
-                /></a>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img
+                      class="btn pb-3 px-0"
+                      src="./sidebar-icon/music-play.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">Car Audio Systems</a></li>
+                    <li><a class="ddm" href="#">Cellphones</a></li>
+                    <li><a class="ddm" href="#">Desktops</a></li>
+                    <li><a class="ddm" href="#">Gaming Consoles</a></li>
+                    <li><a class="ddm" href="#">Telephones</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/music-play.svg"
-                /></a>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img
+                      class="btn pb-3 px-0"
+                      src="./sidebar-icon/bluetooth.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">Player Accessories</a></li>
+                    <li><a class="ddm" href="#">Speakers & Audio</a></li>
+                    <li><a class="ddm" href="#">Computer Networking</a></li>
+                    <li><a class="ddm" href="#">Movies & Films</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href=""></a>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/bluetooth.svg"
-                /></a>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img class="btn pb-3 px-0" src="./sidebar-icon/clound.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">Android</a></li>
+                    <li><a class="ddm" href="#">Linux & unix</a></li>
+                    <li><a class="ddm" href="#">Macintosh</a></li>
+                    <li><a class="ddm" href="#">Windows</a></li>
+                    <li><a class="ddm" href="#">iPhone & iOS</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/clound.svg"
-                /></a>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img
+                      class="btn pb-3 px-0"
+                      src="./sidebar-icon/electricity.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">Antenna Toppers</a></li>
+                    <li><a class="ddm" href="#">Automotive Body Armor</a></li>
+                    <li><a class="ddm" href="#">Power Inverter</a></li>
+                    <li><a class="ddm" href="#">Gas Tank Doors</a></li>
+                    <li><a class="ddm" href="#">Hood Scoops & vents</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/electricity.svg"
-                /></a>
+                   <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img
+                      class="btn pb-3 px-0"
+                      src="./sidebar-icon/cpu.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">Computer Cpu Processors</a></li>
+                    <li><a class="ddm" href="#">Internal Fans & Cooling</a></li>
+                    <li><a class="ddm" href="#">Graphics Cards</a></li>
+                    <li><a class="ddm" href="#">Network I/O Port Cards</a></li>
+                    <li><a class="ddm" href="#">Internal Memory Card</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/cpu.svg"
-                /></a>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img
+                      class="btn pb-3 px-0"
+                      src="./sidebar-icon/devices.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">Graphic PC</a></li>
+                    <li><a class="ddm" href="#">Office PC</a></li>
+                    <li><a class="ddm" href="#">Gaming PC</a></li>
+                    <li><a class="ddm" href="#">Server</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/devices.svg"
-                /></a>
+                <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img
+                      class="btn pb-3 px-0"
+                      src="./sidebar-icon/driver.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">JBL</a></li>
+                    <li><a class="ddm" href="#">Anker</a></li>
+                    <li><a class="ddm" href="#">Pyle</a></li>
+                    <li><a class="ddm" href="#">Bose</a></li>
+                    <li><a class="ddm" href="#">Logitech</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/driver.svg"
-                /></a>
+                 <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img
+                      class="btn pb-3 px-0"
+                      src="./sidebar-icon/airpod.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">On-Ear Headphones</a></li>
+                    <li><a class="ddm" href="#">In-Ear Headphones</a></li>
+                    <li><a class="ddm" href="#">Earbud</a></li>
+                    <li><a class="ddm" href="#">Over-Ear Headphones</a></li>
+                    <li><a class="ddm" href="#">Other</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  ><img class="pb-3" src="./sidebar-icon/airpod.svg"
-                /></a>
-              </li>
-              <li>
-                <a href="#"><img src="./sidebar-icon/lamp.svg" /></a>
+                      <div class="btn-group dropend px-0">
+                  <a
+                    href="#"
+                    id="dropdown-menu-button"
+                    data-bs-toggle="dropdown"
+                    ><img
+                      class="btn pb-3 px-0"
+                      src="./sidebar-icon/lamp.svg"
+                  /></a>
+
+                  <ul class="dropdown-menu ms-4 p-3">
+                    <li><a class="ddm" href="#">CopyHolders</a></li>
+                    <li><a class="ddm" href="#">Office Bookends</a></li>
+                    <li><a class="ddm" href="#">Business Card Holders</a></li>
+                    <li><a class="ddm" href="#">Lap Desks</a></li>
+                    <li><a class="ddm" href="#">Mouse Pads</a></li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="./enable-stuff.js"></script>
   </body>
 </html>
